@@ -6,26 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2c07bec49c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-            <img src="images/jitulogo.png" class="logo">
-            <ul>
-               <span> 
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-               </span>
-            </ul>
-        </nav>
-      </div>
-    </div> 
+    <body>
+        <div id="navbar">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom bg-light">
+                <a class="navbar-brand" href="#">Jitendra</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link  active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link " href="#about">About</a>
+                    <a class="nav-item nav-link " href="#skills">Skills</a>
+                    <a class="nav-item nav-link " href="#portfolio">Projects</a>
+                    <a class="nav-item nav-link " href="#contact">Contact</a>
+                    
+                  </div>
+                </div>
+              </nav>
+        </div>
         <div class="header-text">
              <div class="name">
                     <span>
@@ -207,7 +211,7 @@
                     <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="https://web.telegram.org/?legacy=1#/"><i class="fa-brands fa-telegram"></i></a>
                 </div>
-                <!-- <a href="" download class="btn btn2">Download CV</a> -->
+                 <a href="./file/Jitendra sengar Resume .pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -220,24 +224,9 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright: Made<i class="fa-solid fa-heart"></i> By Jitu Sengar</p>
+            <p>Copyright @ 2024: Made<i class="fa-solid fa-heart"></i> By Jitendra Sengar</p>
         </div>
 </div>
-<script>
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-
-        for(tablink of tablinks){
-            tablink.classlist.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classlist.remove("active-tab");
-        }
-        event.currentTarget.classlist.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbx_aMzDEnSjj7r0sewdJLGhXn57qljGXwnvDhRNuDcj1rvTG65Ri0UuqzqfYCbl7pU2/exec'
     const form = document.forms['submit-to-google-sheet']
@@ -255,6 +244,6 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-  <a href="more.html">Click here for More Details</a>
+
 </body>
 </html>
